@@ -36,14 +36,13 @@ function game(){
         playRound(playerSelection, computerSelection);
     }
 
-    if(player > computer) return "player";
-    else if(player == computer) return "draw";
-    else return "computer";
+    if(player > computer) console.log("player");
+    else if(player == computer) console.log("draw");
+    else return console.log("computer");
 }
 
 function getComputerChoice(){
     let x = Math.floor(Math.random()*10);
-    console.log(x);
     if(x%3 == 0)
         return "rock";
     else if(x%3 == 1)
