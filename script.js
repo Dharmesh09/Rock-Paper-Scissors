@@ -31,7 +31,9 @@ function playRound(playerSelection, computerSelection){
 
 function game(){
     for(let i = 0;i<5;i++){
-        playRound();
+        let playerSelection = prompt("Enter choice: ");
+        let computerSelection = getComputerChoice();
+        playRound(playerSelection, computerSelection);
     }
 
     if(player > computer) return "player";
@@ -50,8 +52,3 @@ function getComputerChoice(){
         return "scissors";
 }
 
-
-let playerSelection = prompt("Enter choice: ");
-let computerSelection = getComputerChoice();
-
-playRound(playerSelection, computerSelection);
