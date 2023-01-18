@@ -1,34 +1,37 @@
-function playRound(playerSelection, computerSelection){
-    let player = 0, computer = 0;
-    for(let i = 0; i< 5;i++){
-        if(playerSelection === computerSelection){
-            continue;
-        }
-        else{
-            if(playerSelection === "rock"){
-                if(computerSelection === "paper") 
-                    computer++;        
+let player = 0, computer = 0;
 
-                else
-                    player++;        
-            }
-    
-            else if(playerSelection === "paper"){
-                if(computerSelection === "scissors")
-                    computer++;       
-                
-                else
-                    player++;       
-            }
-    
-            else{
-                if(computerSelection === "rock")
-                    computer++;      
-                
-                else
-                    player++;        
-            }
+function playRound(playerSelection, computerSelection){
+    if(!(playerSelection === computerSelection)){
+        if(playerSelection === "rock"){
+            if(computerSelection === "paper") 
+                computer++;        
+
+            else
+                player++;        
         }
+
+        else if(playerSelection === "paper"){
+            if(computerSelection === "scissors")
+                computer++;       
+            
+            else
+                player++;       
+        }
+
+        else{
+            if(computerSelection === "rock")
+                computer++;      
+            
+            else
+                player++;        
+        }
+    }
+    
+}
+
+function game(){
+    for(let i = 0;i<5;i++){
+        playRound();
     }
 
     if(player > computer) return "player";
