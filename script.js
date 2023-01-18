@@ -52,3 +52,4 @@ function getComputerChoice(){
         return "scissors";
 }
 
+game();
