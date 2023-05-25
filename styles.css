@@ -1,5 +1,62 @@
+body{
+    overflow-y: hidden;
+    margin: 0;
+    /* padding: 0; */
+}
+
 .container{
     display: flex;
+    flex-direction: column;
+    height: 98vh;
+    align-items: center;
+    justify-content: space-around;
+    border: 10px solid hwb(41 36% 0%);
+    /* padding: 5rem; */
+    /* overflow: hidden; */
+}
+
+.box{
+    display: flex;
+    /* flex-direction: row; */
+    /* height: 98vh; */
     align-items: center;
     justify-content: center;
+    gap: 33%;
+    /* border: 10px solid hwb(41 36% 0%); */
+    /* padding: 5rem; */
+    /* overflow: hidden; */
+
+}
+
+.buttons{
+    padding: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: solid 5px rgba(0,0,0,0.6);
+    border-radius: 1rem;
+    transition-duration: 0.3s;
+}
+
+.buttons:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.9)
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+#results{
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 2.625rem;
+    font-weight: bold;
+}
+
+#score{
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+
+span{
+    margin: 1rem 4rem 1rem 4rem;
 }

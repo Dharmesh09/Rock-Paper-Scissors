@@ -10,10 +10,19 @@
 <body>
     
     <div class="container">
-        <button class="buttons">Rock</button>
-        <button class="buttons">Paper</button>
-        <button class="buttons">Scisscors</button>
+        <div class="box">
+            <button class="buttons" id="rock" onClick="reply_click()">Rock</button>
+            <button class="buttons" id="paper" onClick="reply_click()">Paper</button>
+            <button class="buttons" id="scissors" onClick="reply_click()">Scisscors</button>
+        </div>
+        <div id="score">
+            <span id="playerScore"></span>
+            <span id="computerScore"></span>
+        </div>
+        <div id="results"></div>
     </div>
+
+    
     
     <script src="script.js"></script>
 
